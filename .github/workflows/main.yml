@@ -8,7 +8,7 @@ permissions:
   contents: read
 
 env:
-  TF_WORKING_DIR: ./aks-infra/env/dev/
+  TF_WORKING_DIR: env/dev
   STORAGE_RG: "vaibhavrg"
   STORAGE_ACCOUNT: "vaibhavstg"
   CONTAINER_NAME: "tijori"
