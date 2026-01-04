@@ -144,8 +144,8 @@ mssql_servers = {
     resource_group_name          = "todo-aks-rg"
     location                     = "west us"
     version                      = "12.0"
-    administrator_login          = "satya"
-    administrator_login_password = "Satya@834068"
+    administrator_login          = "vaibhav"
+    administrator_login_password = "Vaibhav@1996"
   }
 }
 
