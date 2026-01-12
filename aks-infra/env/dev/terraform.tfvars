@@ -144,8 +144,8 @@ mssql_servers = {
     resource_group_name          = "todo-aks-rg"
     location                     = "west us"
     version                      = "12.0"
-    administrator_login          = "vaibhav"
-    administrator_login_password = "Vaibhav@1996"
+    administrator_login          = "vaibhavadmin"
+    administrator_login_password = "P@ssword123!"
   }
 }
 
@@ -160,4 +160,5 @@ mssql_databases = {
     sku_name      = "S0"
     enclave_type  = "VBS"
   }
+
 }
