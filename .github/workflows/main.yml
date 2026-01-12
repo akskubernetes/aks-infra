@@ -9,8 +9,8 @@ permissions:
 
 env:
   TF_WORKING_DIR: aks-infra/env/dev
-  STORAGE_RG: "vaibhavrg"
-  STORAGE_ACCOUNT: "vaibhavstg"
+  STORAGE_RG: "ash-rg"
+  STORAGE_ACCOUNT: "niteshstg12"
   CONTAINER_NAME: "tijori"
   STATE_FILE: "aksinfra.tfstate"
 
