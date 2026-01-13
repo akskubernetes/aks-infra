@@ -1,7 +1,7 @@
 resource_groups = {
   rg1 = {
     name     = "todo-aks-rg"
-    location = "west us"
+    location = "Canada Central"
   }
 }
 
@@ -9,7 +9,7 @@ container_registries = {
   acr1 = {
     name                = "todoaksacrspsingh"
     resource_group_name = "todo-aks-rg"
-    location            = "west us"
+    location            = "Canada Central"
     sku                 = "Standard"
   }
 }
@@ -18,7 +18,7 @@ public_ips = {
   pip1 = {
     name                = "todo-aks-pip"
     resource_group_name = "todo-aks-rg"
-    location            = "west us"
+    location            = "Canada Central"
     allocation_method   = "Static"
   }
 }
@@ -27,7 +27,7 @@ virtual_networks = {
   vnet1 = {
     name                = "todo-aks-vnet"
     address_space       = ["10.0.0.0/16"]
-    location            = "west us"
+    location            = "Canada Central"
     resource_group_name = "todo-aks-rg"
     subnets = {
       subnet1 = {
@@ -46,7 +46,7 @@ application_gateways = {
   appgw1 = {
     name                = "todo-aks-appgw"
     resource_group_name = "todo-aks-rg"
-    location            = "west us"
+    location            = "Canada Central"
     sku = {
       name     = "Standard_v2"
       tier     = "Standard_v2"
@@ -116,13 +116,13 @@ kubernetes_clusters = {
     acr_pull_role_name               = "AcrPull"
     skip_aad_check                   = true
     name                             = "todo-aks-aks"
-    location                         = "west us"
+    location                         = "Canada Central"
     dns_prefix                       = "todo-aks"
     kubernetes_version               = "1.32.5"
     default_node_pool = {
       name                 = "default"
       node_count           = 1
-      vm_size              = "standard_a2_v2"
+      vm_size              = "Standard_D2ps_v6"
       max_pods             = 80
       auto_scaling_enabled = true
       min_count            = 1
@@ -142,7 +142,7 @@ mssql_servers = {
   mssql1 = {
     name                         = "todo-aksmssqlserver007"
     resource_group_name          = "todo-aks-rg"
-    location                     = "west us"
+    location                     = "Canada Central"
     version                      = "12.0"
     administrator_login          = "vaibhavadmin"
     administrator_login_password = "P@ssword123!"
@@ -162,3 +162,4 @@ mssql_databases = {
   }
 
 }
+
