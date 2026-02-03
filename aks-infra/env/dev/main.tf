@@ -5,6 +5,7 @@ locals {
   }
 }
 
+
 module "resource_group" {
   source          = "../../modules/azurerm_resource_group"
   resource_groups = var.resource_groups
@@ -69,3 +70,4 @@ module "aks" {
 # output "object_id" {
 #   value = data.azuread_users.azure_users.users[0].object_id
 # }
+
